@@ -24,11 +24,10 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
   </PropertyGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Compile Include="BSJProtocol\AnalysisResutl.cs" />
-    <Compile Include="BSJProtocol\CBsjProtocol.cs" />
-    <Compile Include="BSJProtocol\DWORDIPAddress.cs" />
+    <Compile Include="AnalysisResutl.cs" />
+    <Compile Include="CBsjProtocol.cs" />
+    <Compile Include="DWORDIPAddress.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
