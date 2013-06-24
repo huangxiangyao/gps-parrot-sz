@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ParrotModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2000" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ParrotModelStoreContainer">
+          <EntitySet Name="CarList" EntityType="ParrotModel.Store.CarList" store:Type="Tables" store:Schema="dbo" store:Name="CarList">
+            <DefiningQuery>SELECT 
+      [CarList].[id] AS [id], 
+      [CarList].[Mobile_Consumer_ID] AS [Mobile_Consumer_ID], 
+      [CarList].[Mobile_ID] AS [Mobile_ID], 
+      [CarList].[Mobile_Type] AS [Mobile_Type], 
+      [CarList].[Mobile_Sim] AS [Mobile_Sim], 
+      [CarList].[Mobile_SN] AS [Mobile_SN], 
+      [CarList].[Mobile_AddTag] AS [Mobile_AddTag], 
+      [CarList].[Mobile_EditTag] AS [Mobile_EditTag], 
+      [CarList].[CanWebQuery] AS [CanWebQuery], 
+      [CarList].[CreateDate] AS [CreateDate], 
+      [CarList].[Attribute] AS [Attribute], 
+      [CarList].[UpStr] AS [UpStr], 
+      [CarList].[Mobile_VehicleRegistration] AS [Mobile_VehicleRegistration], 
+      [CarList].[Users] AS [Users], 
+      [CarList].[DelSign] AS [DelSign], 
+      [CarList].[SysCreateDate] AS [SysCreateDate], 
+      [CarList].[ClientID] AS [ClientID], 
+      [CarList].[Sign] AS [Sign], 
+      [CarList].[IsProbation] AS [IsProbation], 
+      [CarList].[UptoDate] AS [UptoDate], 
+      [CarList].[IsAuditing] AS [IsAuditing], 
+      [CarList].[Mobile_SimType] AS [Mobile_SimType], 
+      [CarList].[Mobile_UnitTypeName] AS [Mobile_UnitTypeName], 
+      [CarList].[NetParameter] AS [NetParameter], 
+      [CarList].[SMSCenter1] AS [SMSCenter1], 
+      [CarList].[SMSCenter2] AS [SMSCenter2], 
+      [CarList].[DB44_EnterpriseCode] AS [DB44_EnterpriseCode], 
+      [CarList].[DB44_MDT_Type] AS [DB44_MDT_Type], 
+      [CarList].[DB44_VehicleRegistration_Type] AS [DB44_VehicleRegistration_Type], 
+      [CarList].[DB44_VehicleType] AS [DB44_VehicleType], 
+      [CarList].[DB44_VehicleUseType] AS [DB44_VehicleUseType], 
+      [CarList].[DB44_VehicleGroupCode] AS [DB44_VehicleGroupCode], 
+      [CarList].[DB44_VehicleGroupCYZGZ] AS [DB44_VehicleGroupCYZGZ], 
+      [CarList].[DB44_CompanyCode] AS [DB44_CompanyCode], 
+      [CarList].[DB44_VehicleGroupName] AS [DB44_VehicleGroupName], 
+      [CarList].[DB44_VehicleRegistrationColor] AS [DB44_VehicleRegistrationColor]
+      FROM [dbo].[CarList] AS [CarList]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MobileInfoList" EntityType="ParrotModel.Store.MobileInfoList" store:Type="Tables" store:Schema="dbo" store:Name="MobileInfoList">
+            <DefiningQuery>SELECT 
+      [MobileInfoList].[Mobile_Consumer_ID] AS [Mobile_Consumer_ID], 
+      [MobileInfoList].[Mobile_ID] AS [Mobile_ID], 
+      [MobileInfoList].[Mobile_Type] AS [Mobile_Type], 
+      [MobileInfoList].[Mobile_Sim] AS [Mobile_Sim], 
+      [MobileInfoList].[Mobile_SN] AS [Mobile_SN], 
+      [MobileInfoList].[Mobile_AddTag] AS [Mobile_AddTag], 
+      [MobileInfoList].[Mobile_EditTag] AS [Mobile_EditTag], 
+      [MobileInfoList].[Mobile_IntervalSms] AS [Mobile_IntervalSms], 
+      [MobileInfoList].[Mobile_IntervalUdp] AS [Mobile_IntervalUdp], 
+      [MobileInfoList].[Mobile_IntervalTcp] AS [Mobile_IntervalTcp], 
+      [MobileInfoList].[Mobile_Sensor_L2_L] AS [Mobile_Sensor_L2_L], 
+      [MobileInfoList].[Mobile_Sensor_L2_H] AS [Mobile_Sensor_L2_H], 
+      [MobileInfoList].[Mobile_Sensor_L1_L] AS [Mobile_Sensor_L1_L], 
+      [MobileInfoList].[Mobile_Sensor_L1_H] AS [Mobile_Sensor_L1_H], 
+      [MobileInfoList].[Mobile_Sensor_H2_L] AS [Mobile_Sensor_H2_L], 
+      [MobileInfoList].[Mobile_Sensor_H2_H] AS [Mobile_Sensor_H2_H], 
+      [MobileInfoList].[Mobile_Sensor_H1_L] AS [Mobile_Sensor_H1_L], 
+      [MobileInfoList].[Mobile_Sensor_H1_H] AS [Mobile_Sensor_H1_H], 
+      [MobileInfoList].[id] AS [id], 
+      [MobileInfoList].[Mobile_MostlyProtocol] AS [Mobile_MostlyProtocol], 
+      [MobileInfoList].[Mobile_VehicleName] AS [Mobile_VehicleName], 
+      [MobileInfoList].[H1_H_Tag] AS [H1_H_Tag], 
+      [MobileInfoList].[H1_L_Tag] AS [H1_L_Tag], 
+      [MobileInfoList].[H2_H_Tag] AS [H2_H_Tag], 
+      [MobileInfoList].[H2_L_Tag] AS [H2_L_Tag], 
+      [MobileInfoList].[L1_H_Tag] AS [L1_H_Tag], 
+      [MobileInfoList].[L1_L_Tag] AS [L1_L_Tag], 
+      [MobileInfoList].[L2_H_Tag] AS [L2_H_Tag], 
+      [MobileInfoList].[L2_L_Tag] AS [L2_L_Tag], 
+      [MobileInfoList].[Phone] AS [Phone], 
+      [MobileInfoList].[Power_Tag] AS [Power_Tag], 
+      [MobileInfoList].[GPS_Tag] AS [GPS_Tag], 
+      [MobileInfoList].[Mobile_VehicleRegistration] AS [Mobile_VehicleRegistration], 
+      [MobileInfoList].[Attribute] AS [Attribute], 
+      [MobileInfoList].[NetParameter] AS [NetParameter], 
+      [MobileInfoList].[SMSCenter2] AS [SMSCenter2], 
+      [MobileInfoList].[SMSCenter1] AS [SMSCenter1], 
+      [MobileInfoList].[Mobile_VehicleColor] AS [Mobile_VehicleColor], 
+      [MobileInfoList].[DB44_EnterpriseCode] AS [DB44_EnterpriseCode], 
+      [MobileInfoList].[DB44_MDT_Type] AS [DB44_MDT_Type], 
+      [MobileInfoList].[DB44_VehicleRegistration_Type] AS [DB44_VehicleRegistration_Type], 
+      [MobileInfoList].[DB44_VehicleType] AS [DB44_VehicleType], 
+      [MobileInfoList].[DB44_VehicleUseType] AS [DB44_VehicleUseType], 
+      [MobileInfoList].[DB44_VehicleGroupCode] AS [DB44_VehicleGroupCode], 
+      [MobileInfoList].[DB44_VehicleGroupCYZGZ] AS [DB44_VehicleGroupCYZGZ], 
+      [MobileInfoList].[DB44_CompanyCode] AS [DB44_CompanyCode], 
+      [MobileInfoList].[DB44_VehicleGroupName] AS [DB44_VehicleGroupName], 
+      [MobileInfoList].[DB44_VehicleRegistrationColor] AS [DB44_VehicleRegistrationColor]
+      FROM [dbo].[MobileInfoList] AS [MobileInfoList]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserInfo" EntityType="ParrotModel.Store.UserInfo" store:Type="Tables" store:Schema="dbo" store:Name="UserInfo">
+            <DefiningQuery>SELECT 
+      [UserInfo].[User_Id] AS [User_Id], 
+      [UserInfo].[User_Name] AS [User_Name], 
+      [UserInfo].[User_Pwd] AS [User_Pwd], 
+      [UserInfo].[User_Type] AS [User_Type], 
+      [UserInfo].[User_WatchRangeType] AS [User_WatchRangeType], 
+      [UserInfo].[User_RangerList] AS [User_RangerList], 
+      [UserInfo].[User_CreateTime] AS [User_CreateTime], 
+      [UserInfo].[User_CanWebQuery] AS [User_CanWebQuery], 
+      [UserInfo].[IsForbidden] AS [IsForbidden], 
+      [UserInfo].[Subjection] AS [Subjection], 
+      [UserInfo].[UIF_Version1] AS [UIF_Version1], 
+      [UserInfo].[UIF_Version2] AS [UIF_Version2], 
+      [UserInfo].[UIF_Version3] AS [UIF_Version3], 
+      [UserInfo].[ClientName] AS [ClientName], 
+      [UserInfo].[ClientID] AS [ClientID], 
+      [UserInfo].[AllowAuditing] AS [AllowAuditing]
+      FROM [dbo].[UserInfo] AS [UserInfo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UsrLogRec" EntityType="ParrotModel.Store.UsrLogRec" store:Type="Tables" store:Schema="dbo" store:Name="UsrLogRec">
+            <DefiningQuery>SELECT 
+      [UsrLogRec].[LogId] AS [LogId], 
+      [UsrLogRec].[UsrName] AS [UsrName], 
+      [UsrLogRec].[LogOnTime] AS [LogOnTime], 
+      [UsrLogRec].[LogOffTime] AS [LogOffTime], 
+      [UsrLogRec].[LogResult] AS [LogResult], 
+      [UsrLogRec].[LogFrom] AS [LogFrom]
+      FROM [dbo].[UsrLogRec] AS [UsrLogRec]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'SysInfoCenter.dbo.CarList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="CarList">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="Mobile_Consumer_ID" Type="varchar" MaxLength="50" />
+          <Property Name="Mobile_ID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Mobile_Type" Type="int" Nullable="false" />
+          <Property Name="Mobile_Sim" Type="varchar" MaxLength="50" />
+          <Property Name="Mobile_SN" Type="varchar" MaxLength="50" />
+          <Property Name="Mobile_AddTag" Type="bit" />
+          <Property Name="Mobile_EditTag" Type="bit" />
+          <Property Name="CanWebQuery" Type="bit" />
+          <Property Name="CreateDate" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute" Type="varchar" MaxLength="50" />
+          <Property Name="UpStr" Type="varchar" MaxLength="1000" />
+          <Property Name="Mobile_VehicleRegistration" Type="varchar" MaxLength="100" />
+          <Property Name="Users" Type="varchar" MaxLength="50" />
+          <Property Name="DelSign" Type="bit" Nullable="false" />
+          <Property Name="SysCreateDate" Type="datetime" />
+          <Property Name="ClientID" Type="int" Nullable="false" />
+          <Property Name="Sign" Type="bit" />
+          <Property Name="IsProbation" Type="bit" />
+          <Property Name="UptoDate" Type="varchar" MaxLength="50" />
+          <Property Name="IsAuditing" Type="bit" />
+          <Property Name="Mobile_SimType" Type="varchar" MaxLength="50" />
+          <Property Name="Mobile_UnitTypeName" Type="varchar" MaxLength="50" />
+          <Property Name="NetParameter" Type="varchar" MaxLength="50" />
+          <Property Name="SMSCenter1" Type="varchar" MaxLength="50" />
+          <Property Name="SMSCenter2" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_EnterpriseCode" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_MDT_Type" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleRegistration_Type" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleType" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleUseType" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleGroupCode" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleGroupCYZGZ" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_CompanyCode" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleGroupName" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleRegistrationColor" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'SysInfoCenter.dbo.MobileInfoList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="MobileInfoList">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="Mobile_Consumer_ID" Type="varchar" MaxLength="50" />
+          <Property Name="Mobile_ID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Mobile_Type" Type="int" Nullable="false" />
+          <Property Name="Mobile_Sim" Type="varchar" MaxLength="50" />
+          <Property Name="Mobile_SN" Type="varchar" MaxLength="50" />
+          <Property Name="Mobile_AddTag" Type="bit" />
+          <Property Name="Mobile_EditTag" Type="bit" />
+          <Property Name="Mobile_IntervalSms" Type="int" />
+          <Property Name="Mobile_IntervalUdp" Type="int" />
+          <Property Name="Mobile_IntervalTcp" Type="int" />
+          <Property Name="Mobile_Sensor_L2_L" Type="varchar" MaxLength="100" />
+          <Property Name="Mobile_Sensor_L2_H" Type="varchar" MaxLength="100" />
+          <Property Name="Mobile_Sensor_L1_L" Type="varchar" MaxLength="100" />
+          <Property Name="Mobile_Sensor_L1_H" Type="varchar" MaxLength="100" />
+          <Property Name="Mobile_Sensor_H2_L" Type="varchar" MaxLength="100" />
+          <Property Name="Mobile_Sensor_H2_H" Type="varchar" MaxLength="100" />
+          <Property Name="Mobile_Sensor_H1_L" Type="varchar" MaxLength="100" />
+          <Property Name="Mobile_Sensor_H1_H" Type="varchar" MaxLength="100" />
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="Mobile_MostlyProtocol" Type="real" />
+          <Property Name="Mobile_VehicleName" Type="varchar" MaxLength="50" />
+          <Property Name="H1_H_Tag" Type="bit" />
+          <Property Name="H1_L_Tag" Type="bit" />
+          <Property Name="H2_H_Tag" Type="bit" />
+          <Property Name="H2_L_Tag" Type="bit" />
+          <Property Name="L1_H_Tag" Type="bit" />
+          <Property Name="L1_L_Tag" Type="bit" />
+          <Property Name="L2_H_Tag" Type="bit" />
+          <Property Name="L2_L_Tag" Type="bit" />
+          <Property Name="Phone" Type="varchar" MaxLength="50" />
+          <Property Name="Power_Tag" Type="bit" />
+          <Property Name="GPS_Tag" Type="bit" />
+          <Property Name="Mobile_VehicleRegistration" Type="varchar" MaxLength="100" />
+          <Property Name="Attribute" Type="varchar" MaxLength="50" />
+          <Property Name="NetParameter" Type="varchar" MaxLength="50" />
+          <Property Name="SMSCenter2" Type="varchar" MaxLength="50" />
+          <Property Name="SMSCenter1" Type="varchar" MaxLength="50" />
+          <Property Name="Mobile_VehicleColor" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_EnterpriseCode" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_MDT_Type" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleRegistration_Type" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleType" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleUseType" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleGroupCode" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleGroupCYZGZ" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_CompanyCode" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleGroupName" Type="varchar" MaxLength="50" />
+          <Property Name="DB44_VehicleRegistrationColor" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'SysInfoCenter.dbo.UserInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="User_Id" />
+            
+            
+            
+            
+            
+          </Key>
+          <Property Name="User_Id" Type="int" Nullable="false" />
+          <Property Name="User_Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="User_Pwd" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="User_Type" Type="int" />
+          <Property Name="User_WatchRangeType" Type="varchar" MaxLength="200" />
+          <Property Name="User_RangerList" Type="varchar" MaxLength="5000" />
+          <Property Name="User_CreateTime" Type="datetime" />
+          <Property Name="User_CanWebQuery" Type="bit" />
+          <Property Name="IsForbidden" Type="bit" />
+          <Property Name="Subjection" Type="varchar" MaxLength="50" />
+          <Property Name="UIF_Version1" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="UIF_Version2" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="UIF_Version3" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ClientName" Type="varchar" MaxLength="50" />
+          <Property Name="ClientID" Type="int" />
+          <Property Name="AllowAuditing" Type="bit" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'SysInfoCenter.dbo.UsrLogRec' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="UsrLogRec">
+          <Key>
+            <PropertyRef Name="LogId" />
+          </Key>
+          <Property Name="LogId" Type="int" Nullable="false" />
+          <Property Name="UsrName" Type="varchar" MaxLength="50" />
+          <Property Name="LogOnTime" Type="datetime" />
+          <Property Name="LogOffTime" Type="varchar" MaxLength="20" />
+          <Property Name="LogResult" Type="bit" />
+          <Property Name="LogFrom" Type="char" MaxLength="20" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Parrot.Models" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ParrotEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="UserInfoes" EntityType="Parrot.Models.UserInfo" />
+          <EntitySet Name="UsrLogRecs" EntityType="Parrot.Models.UsrLogRec" />
+          <EntitySet Name="MobileInfoLists" EntityType="Parrot.Models.MobileInfoList" />
+          <EntitySet Name="CarLists" EntityType="Parrot.Models.CarList" />
+        </EntityContainer>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="User_Id" />
+          </Key>
+          <Property Name="User_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="User_Pwd" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="User_Type" Type="Int32" />
+          <Property Name="User_WatchRangeType" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="User_RangerList" Type="String" MaxLength="5000" Unicode="false" FixedLength="false" />
+          <Property Name="User_CreateTime" Type="DateTime" />
+          <Property Name="User_CanWebQuery" Type="Boolean" />
+          <Property Name="IsForbidden" Type="Boolean" />
+          <Property Name="Subjection" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="UIF_Version1" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="UIF_Version2" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="UIF_Version3" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ClientName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ClientID" Type="Int32" />
+          <Property Name="AllowAuditing" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="UsrLogRec">
+          <Key>
+            <PropertyRef Name="LogId" />
+          </Key>
+          <Property Name="LogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UsrName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LogOnTime" Type="DateTime" />
+          <Property Name="LogOffTime" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="LogResult" Type="Boolean" />
+          <Property Name="LogFrom" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+        </EntityType>
+        <EntityType Name="MobileInfoList">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="String" Name="Mobile_Consumer_ID" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_ID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Mobile_Type" Nullable="false" />
+          <Property Type="String" Name="Mobile_Sim" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_SN" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Mobile_AddTag" />
+          <Property Type="Boolean" Name="Mobile_EditTag" />
+          <Property Type="Int32" Name="Mobile_IntervalSms" />
+          <Property Type="Int32" Name="Mobile_IntervalUdp" />
+          <Property Type="Int32" Name="Mobile_IntervalTcp" />
+          <Property Type="String" Name="Mobile_Sensor_L2_L" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_Sensor_L2_H" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_Sensor_L1_L" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_Sensor_L1_H" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_Sensor_H2_L" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_Sensor_H2_H" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_Sensor_H1_L" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_Sensor_H1_H" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Single" Name="Mobile_MostlyProtocol" />
+          <Property Type="String" Name="Mobile_VehicleName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="H1_H_Tag" />
+          <Property Type="Boolean" Name="H1_L_Tag" />
+          <Property Type="Boolean" Name="H2_H_Tag" />
+          <Property Type="Boolean" Name="H2_L_Tag" />
+          <Property Type="Boolean" Name="L1_H_Tag" />
+          <Property Type="Boolean" Name="L1_L_Tag" />
+          <Property Type="Boolean" Name="L2_H_Tag" />
+          <Property Type="Boolean" Name="L2_L_Tag" />
+          <Property Type="String" Name="Phone" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Power_Tag" />
+          <Property Type="Boolean" Name="GPS_Tag" />
+          <Property Type="String" Name="Mobile_VehicleRegistration" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Attribute" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NetParameter" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMSCenter2" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMSCenter1" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_VehicleColor" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleGroupName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_CompanyCode" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleRegistrationColor" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleGroupCYZGZ" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleGroupCode" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleUseType" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleType" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleRegistration_Type" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_MDT_Type" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_EnterpriseCode" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CarList">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="Mobile_Consumer_ID" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_ID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Mobile_Type" Nullable="false" />
+          <Property Type="String" Name="Mobile_Sim" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_SN" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Mobile_AddTag" />
+          <Property Type="Boolean" Name="Mobile_EditTag" />
+          <Property Type="Boolean" Name="CanWebQuery" />
+          <Property Type="String" Name="CreateDate" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Attribute" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UpStr" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_VehicleRegistration" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Users" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="DelSign" Nullable="false" />
+          <Property Type="DateTime" Name="SysCreateDate" />
+          <Property Type="Int32" Name="ClientID" Nullable="false" />
+          <Property Type="Boolean" Name="Sign" />
+          <Property Type="Boolean" Name="IsProbation" />
+          <Property Type="String" Name="UptoDate" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsAuditing" />
+          <Property Type="String" Name="Mobile_SimType" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Mobile_UnitTypeName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NetParameter" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMSCenter1" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMSCenter2" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_EnterpriseCode" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_MDT_Type" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleRegistration_Type" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleType" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleUseType" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleGroupCode" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleGroupCYZGZ" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_CompanyCode" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleGroupName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DB44_VehicleRegistrationColor" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ParrotModelStoreContainer" CdmEntityContainer="ParrotEntities">
+          <EntitySetMapping Name="UserInfoes"><EntityTypeMapping TypeName="Parrot.Models.UserInfo"><MappingFragment StoreEntitySet="UserInfo">
+            <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+            <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+            <ScalarProperty Name="User_Pwd" ColumnName="User_Pwd" />
+            <ScalarProperty Name="User_Type" ColumnName="User_Type" />
+            <ScalarProperty Name="User_WatchRangeType" ColumnName="User_WatchRangeType" />
+            <ScalarProperty Name="User_RangerList" ColumnName="User_RangerList" />
+            <ScalarProperty Name="User_CreateTime" ColumnName="User_CreateTime" />
+            <ScalarProperty Name="User_CanWebQuery" ColumnName="User_CanWebQuery" />
+            <ScalarProperty Name="IsForbidden" ColumnName="IsForbidden" />
+            <ScalarProperty Name="Subjection" ColumnName="Subjection" />
+            <ScalarProperty Name="UIF_Version1" ColumnName="UIF_Version1" />
+            <ScalarProperty Name="UIF_Version2" ColumnName="UIF_Version2" />
+            <ScalarProperty Name="UIF_Version3" ColumnName="UIF_Version3" />
+            <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+            <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+            <ScalarProperty Name="AllowAuditing" ColumnName="AllowAuditing" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UsrLogRecs"><EntityTypeMapping TypeName="Parrot.Models.UsrLogRec"><MappingFragment StoreEntitySet="UsrLogRec">
+            <ScalarProperty Name="LogId" ColumnName="LogId" />
+            <ScalarProperty Name="UsrName" ColumnName="UsrName" />
+            <ScalarProperty Name="LogOnTime" ColumnName="LogOnTime" />
+            <ScalarProperty Name="LogOffTime" ColumnName="LogOffTime" />
+            <ScalarProperty Name="LogResult" ColumnName="LogResult" />
+            <ScalarProperty Name="LogFrom" ColumnName="LogFrom" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="MobileInfoLists">
+            <EntityTypeMapping TypeName="Parrot.Models.MobileInfoList">
+              <MappingFragment StoreEntitySet="MobileInfoList">
+                <ScalarProperty Name="DB44_EnterpriseCode" ColumnName="DB44_EnterpriseCode" />
+                <ScalarProperty Name="DB44_MDT_Type" ColumnName="DB44_MDT_Type" />
+                <ScalarProperty Name="DB44_VehicleRegistration_Type" ColumnName="DB44_VehicleRegistration_Type" />
+                <ScalarProperty Name="DB44_VehicleType" ColumnName="DB44_VehicleType" />
+                <ScalarProperty Name="DB44_VehicleUseType" ColumnName="DB44_VehicleUseType" />
+                <ScalarProperty Name="DB44_VehicleGroupCode" ColumnName="DB44_VehicleGroupCode" />
+                <ScalarProperty Name="DB44_VehicleGroupCYZGZ" ColumnName="DB44_VehicleGroupCYZGZ" />
+                <ScalarProperty Name="DB44_VehicleRegistrationColor" ColumnName="DB44_VehicleRegistrationColor" />
+                <ScalarProperty Name="DB44_CompanyCode" ColumnName="DB44_CompanyCode" />
+                <ScalarProperty Name="DB44_VehicleGroupName" ColumnName="DB44_VehicleGroupName" />
+                <ScalarProperty Name="Mobile_VehicleColor" ColumnName="Mobile_VehicleColor" />
+                <ScalarProperty Name="SMSCenter1" ColumnName="SMSCenter1" />
+                <ScalarProperty Name="SMSCenter2" ColumnName="SMSCenter2" />
+                <ScalarProperty Name="NetParameter" ColumnName="NetParameter" />
+                <ScalarProperty Name="Attribute" ColumnName="Attribute" />
+                <ScalarProperty Name="Mobile_VehicleRegistration" ColumnName="Mobile_VehicleRegistration" />
+                <ScalarProperty Name="GPS_Tag" ColumnName="GPS_Tag" />
+                <ScalarProperty Name="Power_Tag" ColumnName="Power_Tag" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="L2_L_Tag" ColumnName="L2_L_Tag" />
+                <ScalarProperty Name="L2_H_Tag" ColumnName="L2_H_Tag" />
+                <ScalarProperty Name="L1_L_Tag" ColumnName="L1_L_Tag" />
+                <ScalarProperty Name="L1_H_Tag" ColumnName="L1_H_Tag" />
+                <ScalarProperty Name="H2_L_Tag" ColumnName="H2_L_Tag" />
+                <ScalarProperty Name="H2_H_Tag" ColumnName="H2_H_Tag" />
+                <ScalarProperty Name="H1_L_Tag" ColumnName="H1_L_Tag" />
+                <ScalarProperty Name="H1_H_Tag" ColumnName="H1_H_Tag" />
+                <ScalarProperty Name="Mobile_VehicleName" ColumnName="Mobile_VehicleName" />
+                <ScalarProperty Name="Mobile_MostlyProtocol" ColumnName="Mobile_MostlyProtocol" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Mobile_Sensor_H1_H" ColumnName="Mobile_Sensor_H1_H" />
+                <ScalarProperty Name="Mobile_Sensor_H1_L" ColumnName="Mobile_Sensor_H1_L" />
+                <ScalarProperty Name="Mobile_Sensor_H2_H" ColumnName="Mobile_Sensor_H2_H" />
+                <ScalarProperty Name="Mobile_Sensor_H2_L" ColumnName="Mobile_Sensor_H2_L" />
+                <ScalarProperty Name="Mobile_Sensor_L1_H" ColumnName="Mobile_Sensor_L1_H" />
+                <ScalarProperty Name="Mobile_Sensor_L1_L" ColumnName="Mobile_Sensor_L1_L" />
+                <ScalarProperty Name="Mobile_Sensor_L2_H" ColumnName="Mobile_Sensor_L2_H" />
+                <ScalarProperty Name="Mobile_Sensor_L2_L" ColumnName="Mobile_Sensor_L2_L" />
+                <ScalarProperty Name="Mobile_IntervalTcp" ColumnName="Mobile_IntervalTcp" />
+                <ScalarProperty Name="Mobile_IntervalUdp" ColumnName="Mobile_IntervalUdp" />
+                <ScalarProperty Name="Mobile_IntervalSms" ColumnName="Mobile_IntervalSms" />
+                <ScalarProperty Name="Mobile_EditTag" ColumnName="Mobile_EditTag" />
+                <ScalarProperty Name="Mobile_AddTag" ColumnName="Mobile_AddTag" />
+                <ScalarProperty Name="Mobile_SN" ColumnName="Mobile_SN" />
+                <ScalarProperty Name="Mobile_Sim" ColumnName="Mobile_Sim" />
+                <ScalarProperty Name="Mobile_Type" ColumnName="Mobile_Type" />
+                <ScalarProperty Name="Mobile_ID" ColumnName="Mobile_ID" />
+                <ScalarProperty Name="Mobile_Consumer_ID" ColumnName="Mobile_Consumer_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CarLists">
+            <EntityTypeMapping TypeName="Parrot.Models.CarList">
+              <MappingFragment StoreEntitySet="CarList">
+                <ScalarProperty Name="DB44_VehicleRegistrationColor" ColumnName="DB44_VehicleRegistrationColor" />
+                <ScalarProperty Name="DB44_VehicleGroupName" ColumnName="DB44_VehicleGroupName" />
+                <ScalarProperty Name="DB44_CompanyCode" ColumnName="DB44_CompanyCode" />
+                <ScalarProperty Name="DB44_VehicleGroupCYZGZ" ColumnName="DB44_VehicleGroupCYZGZ" />
+                <ScalarProperty Name="DB44_VehicleGroupCode" ColumnName="DB44_VehicleGroupCode" />
+                <ScalarProperty Name="DB44_VehicleUseType" ColumnName="DB44_VehicleUseType" />
+                <ScalarProperty Name="DB44_VehicleType" ColumnName="DB44_VehicleType" />
+                <ScalarProperty Name="DB44_VehicleRegistration_Type" ColumnName="DB44_VehicleRegistration_Type" />
+                <ScalarProperty Name="DB44_MDT_Type" ColumnName="DB44_MDT_Type" />
+                <ScalarProperty Name="DB44_EnterpriseCode" ColumnName="DB44_EnterpriseCode" />
+                <ScalarProperty Name="SMSCenter2" ColumnName="SMSCenter2" />
+                <ScalarProperty Name="SMSCenter1" ColumnName="SMSCenter1" />
+                <ScalarProperty Name="NetParameter" ColumnName="NetParameter" />
+                <ScalarProperty Name="Mobile_UnitTypeName" ColumnName="Mobile_UnitTypeName" />
+                <ScalarProperty Name="Mobile_SimType" ColumnName="Mobile_SimType" />
+                <ScalarProperty Name="IsAuditing" ColumnName="IsAuditing" />
+                <ScalarProperty Name="UptoDate" ColumnName="UptoDate" />
+                <ScalarProperty Name="IsProbation" ColumnName="IsProbation" />
+                <ScalarProperty Name="Sign" ColumnName="Sign" />
+                <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+                <ScalarProperty Name="SysCreateDate" ColumnName="SysCreateDate" />
+                <ScalarProperty Name="DelSign" ColumnName="DelSign" />
+                <ScalarProperty Name="Users" ColumnName="Users" />
+                <ScalarProperty Name="Mobile_VehicleRegistration" ColumnName="Mobile_VehicleRegistration" />
+                <ScalarProperty Name="UpStr" ColumnName="UpStr" />
+                <ScalarProperty Name="Attribute" ColumnName="Attribute" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CanWebQuery" ColumnName="CanWebQuery" />
+                <ScalarProperty Name="Mobile_EditTag" ColumnName="Mobile_EditTag" />
+                <ScalarProperty Name="Mobile_AddTag" ColumnName="Mobile_AddTag" />
+                <ScalarProperty Name="Mobile_SN" ColumnName="Mobile_SN" />
+                <ScalarProperty Name="Mobile_Sim" ColumnName="Mobile_Sim" />
+                <ScalarProperty Name="Mobile_Type" ColumnName="Mobile_Type" />
+                <ScalarProperty Name="Mobile_ID" ColumnName="Mobile_ID" />
+                <ScalarProperty Name="Mobile_Consumer_ID" ColumnName="Mobile_Consumer_ID" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ParrotModel" DisplayType="true" ZoomLevel="74">
+        <EntityTypeShape EntityType="Parrot.Models.UserInfo" Width="1.5" PointX="0.5" PointY="0.5" Height="4.0712491861979156" IsExpanded="true" />
+        <EntityTypeShape EntityType="Parrot.Models.UsrLogRec" Width="1.5" PointX="2.125" PointY="0.5" Height="2.1610522460937496" IsExpanded="true" />
+        <EntityTypeShape EntityType="Parrot.Models.MobileInfoList" Width="2.75" PointX="4" PointY="0.5" Height="10.183879394531253" />
+        <EntityTypeShape EntityType="Parrot.Models.CarList" Width="2.875" PointX="7.125" PointY="0.5" Height="7.89164306640625" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

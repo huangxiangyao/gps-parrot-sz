@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B2755CC-1228-43E3-A2F3-7E11EDB5A908}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Parrot</RootNamespace>
+    <AssemblyName>Parrot</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\release\Parrot\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ProductName>Parrot</ProductName>
+    <PublisherName>SecondViewer</PublisherName>
+    <SuiteName>GPS Monitoring</SuiteName>
+    <ApplicationRevision>73</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\NotifyIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Parrot.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>82A03C8A5E75BC5C8C86C42C21241E04D76ACD7F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Parrot_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communications\DatabaseProcessor.cs" />
+    <Compile Include="Communications\ITraceGenerator.cs" />
+    <Compile Include="Communications\JtjClient.cs" />
+    <Compile Include="Communications\OldSmppClient.cs" />
+    <Compile Include="Communications\SimpleTraceGenerator.cs" />
+    <Compile Include="Communications\SmppAgent.cs" />
+    <Compile Include="Communications\SmppClient.cs" />
+    <Compile Include="Communications\SmppClientBase.cs" />
+    <Compile Include="GpsTerminals\CxGprsTerminal\CxGprsIn.cs" />
+    <Compile Include="GpsTerminals\CxGprsTerminal\CxGprsOut.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Db44ClientAccount.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Db44ClientAccountRepository.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Db44Encryption.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Db44EncryptionFactor.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Db44EncryptionFactorRepository.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Db44In.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Db44Out.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Db44Packet.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Db44Parser.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Db44Util.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Db44Wrapper.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Helpers\Db44CrcCalculator.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Helpers\Db44EscapeHelper.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Helpers\Db44ParserHelper.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Helpers\Db44WrapperHelper.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Helpers\VehiclePlateColorHelper.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\Helpers\VehiclePurposeHelper.cs" />
+    <Compile Include="GpsTerminals\Db44Terminal\SimpleCycleCodeGenerator.cs" />
+    <Compile Include="GpsTerminals\DummyGprsTerminal\DummyGprsIn.cs" />
+    <Compile Include="GpsTerminals\FortyGprsTerminal\FortyGprsIn.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\Area_LimitingSpeedInfoClass.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\ImageTemp.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LH101G_GPRS_PE_In.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LH101G_GPRS_PE_Out.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LH108_GPRS_PE_In.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LH108_GPRS_PE_Out.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LH12_GPRS_PE_In.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LH12_GPRS_PE_Out.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LH14_GPRS_PE_In.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LH14_GPRS_PE_Out.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LH16_GPRS_PE_In.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LH16_GPRS_PE_Out.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LH208_GPRS_PE_In.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LH208_GPRS_PE_Out.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LHA6_GPRS_PE_In.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LHA6_GPRS_PE_Out.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LonghanIn.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LonghanOut.cs" />
+    <Compile Include="GpsTerminals\LonghanTerminal\LonghanWrapper.cs" />
+    <Compile Include="GpsTerminals\TianheGprsTerminal\Area_LimitingSpeedInfoClass.cs" />
+    <Compile Include="GpsTerminals\TianheGprsTerminal\ImgBody.cs" />
+    <Compile Include="GpsTerminals\TianheGprsTerminal\Stop_OvertimeInfoClass.cs" />
+    <Compile Include="GpsTerminals\TianheGprsTerminal\TianheGprsIn.cs" />
+    <Compile Include="GpsTerminals\TianheGprsTerminal\TianheGprsOut.cs" />
+    <Compile Include="GpsTerminals\YelangTerminal\YelanIn.cs" />
+    <Compile Include="GpsTerminals\YelangTerminal\YelanOut.cs" />
+    <Compile Include="Communications\Jtj\DownloadDataParser.cs" />
+    <Compile Include="Communications\Jtj\JtjClientAccount.cs" />
+    <Compile Include="Communications\Jtj\JtjD01.cs" />
+    <Compile Include="Communications\Jtj\JtjD02.cs" />
+    <Compile Include="Communications\Jtj\JtjD03.cs" />
+    <Compile Include="Communications\Jtj\UploadDataWrapper.cs" />
+    <Compile Include="Extensions\ListViewSort.cs" />
+    <Compile Include="Models\CarList.cs">
+      <DependentUpon>ParrotModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ConnectionStringManager.cs" />
+    <Compile Include="Cryptography\DEncrypt.cs" />
+    <Compile Include="Cryptography\DESEncrypt.cs" />
+    <Compile Include="Cryptography\HashEncode.cs" />
+    <Compile Include="Cryptography\RSACryption.cs" />
+    <Compile Include="Models\Db44GpsData.cs" />
+    <Compile Include="Models\Db44GpsTerminalEventArgs\CameraCapturingEventArgs.cs" />
+    <Compile Include="Models\Db44GpsTerminalEventArgs\DriverSignedInOrOutEventArgs.cs" />
+    <Compile Include="Models\Db44GpsTerminalEventArgs\GpsDataReceivedEventArgs.cs" />
+    <Compile Include="Models\Db44GpsTerminalEventArgs\PossibleAccidentDataReportingEventArgs.cs" />
+    <Compile Include="Models\Db44VehicleState.cs" />
+    <Compile Include="Models\EventHandlers.cs" />
+    <Compile Include="Models\GpsClosedArea.cs" />
+    <Compile Include="Models\GpsPosition.cs" />
+    <Compile Include="Models\MdtIdHelper.cs" />
+    <Compile Include="Models\MdtWrapper.cs" />
+    <Compile Include="Models\MobileInfoList.cs">
+      <DependentUpon>ParrotModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NumberConverter.cs" />
+    <Compile Include="Models\ParrotModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParrotModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ParrotModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParrotModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ParrotModel.Designer.cs">
+      <DependentUpon>ParrotModel.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\Structs\TAlarmData.cs" />
+    <Compile Include="Models\Structs\TGpsClientInfo.cs" />
+    <Compile Include="Models\Structs\TMobleUnitInfo.cs" />
+    <Compile Include="Models\UserInfo.cs">
+      <DependentUpon>ParrotModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UsrLogRec.cs">
+      <DependentUpon>ParrotModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ParrotModelWrapper.cs" />
+    <Compile Include="Models\Util.cs" />
+    <Compile Include="Providers\PortableSettingsProvider.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="UI\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\DllImport.cs" />
+    <Compile Include="Utils\HardwareInfo.cs" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Models\ParrotModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ParrotModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="logging.config" />
+    <None Include="Models\ParrotModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ParrotModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Models\ParrotModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ParrotModel.cs</LastGenOutput>
+    </None>
+    <None Include="Parrot_TemporaryKey.pfx" />
+    <None Include="Resources\Settings.ico" />
+    <None Include="Resources\imagesCA7HS24G2.jpg" />
+    <None Include="Resources\imagesCAVBNZC311.jpg" />
+    <None Include="Resources\imagesCAVBNZC31.jpg" />
+    <None Include="Resources\imagesCAVBNZC3.jpg" />
+    <None Include="Resources\%24this.Icon.ico" />
+    <None Include="Resources\imagesCA7HS24G1.jpg" />
+    <None Include="Resources\imagesCA7HS24G.jpg" />
+    <EmbeddedResource Include="Resources\NotifyIcon.ico" />
+    <EmbeddedResource Include="Resources\black.bmp" />
+    <EmbeddedResource Include="Resources\blank.bmp" />
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="cryptography.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
