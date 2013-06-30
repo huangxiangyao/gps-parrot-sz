@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @2 @7 Member=(Name=InitClient OverloadingParameters=[@11,(@4 @5 Type=Int32),@11,@11]))" Category="CodeSchema_Method" Bounds="14.6080837631226,-38.5171584317823,87.67,25.24" CodeSchemaProperty_IsPublic="True" CommonLabel="InitClient" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="InitClient" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/CBsjClient.cs StartLineNumber=30 StartCharacterOffset=2 EndLineNumber=30 EndCharacterOffset=2)" />
+    <Node Id="(@1 @2 @9 Member=(Name=InitConnect OverloadingParameters=[@11,(@4 @5 Type=Int32),@11,@11]))" Category="CodeSchema_Method" Bounds="289.716003621419,-91.3255364829934,102.323333333333,25.24" CodeSchemaProperty_IsPublic="True" CommonLabel="InitConnect" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="InitConnect" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/CFeiTanClient.cs StartLineNumber=30 StartCharacterOffset=2 EndLineNumber=30 EndCharacterOffset=2)" />
+    <Node Id="(@1 @2 Type=CFeiTianPacket Member=(Name=SplitPacket OverloadingParameters=[(@4 @5 Type=(Name=Byte ArrayRank=1 ParentType=Byte) ParamKind=Ref)]))" Category="CodeSchema_Method" Bounds="384.599239705404,74.3947635170066,99.2533333333333,25.24" CodeSchemaProperty_IsPublic="True" CommonLabel="SplitPacket" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="SplitPacket" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/CFeiTianPacket.cs StartLineNumber=33 StartCharacterOffset=2 EndLineNumber=33 EndCharacterOffset=2)" UseManualLocation="True" />
+    <Node Id="@10" Category="CodeSchema_Method" Bounds="249.869245300293,74.3947635170066,104.73,25.24" CodeSchemaProperty_IsPrivate="True" CommonLabel="ParsePacket" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="ParsePacket" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/CFeiTanClient.cs StartLineNumber=986 StartCharacterOffset=2 EndLineNumber=986 EndCharacterOffset=2)" UseManualLocation="True" />
+    <Node Id="@12" Category="CodeSchema_Method" Bounds="210.276368611654,240.115063517007,128.263333333333,25.24" CodeSchemaProperty_IsPrivate="True" CommonLabel="OnFeiTanPacket" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="OnFeiTanPacket" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/frmMain.cs StartLineNumber=964 StartCharacterOffset=2 EndLineNumber=964 EndCharacterOffset=2)" />
+    <Node Id="@13" Category="CodeSchema_Method" Bounds="154.056186828613,184.874963517007,84.93,25.24" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CommonLabel="frmMain" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Constructor" Label="frmMain" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/frmMain.cs StartLineNumber=817 StartCharacterOffset=2 EndLineNumber=817 EndCharacterOffset=2)" />
+    <Node Id="@14" Category="CodeSchema_Method" Bounds="-53.8931670603653,16.7229431915283,109.06,25.24" CodeSchemaProperty_IsPrivate="True" CommonLabel="ClientThread" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="ClientThread" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/CBsjClient.cs StartLineNumber=42 StartCharacterOffset=2 EndLineNumber=42 EndCharacterOffset=2)" />
+    <Node Id="@15" Category="CodeSchema_Field" Bounds="72.0188598632813,295.355163517007,103,25.24" CodeSchemaProperty_IsPrivate="True" DelayedCrossGroupLinksState="Fetched" Label="m_BsjClient" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/frmMain.cs StartLineNumber=84 StartCharacterOffset=21 EndLineNumber=84 EndCharacterOffset=21)" />
+    <Node Id="@16" Category="CodeSchema_Field" Bounds="205.018866780599,295.355163517007,123.993333333333,25.24" CodeSchemaProperty_IsPrivate="True" DelayedCrossGroupLinksState="Fetched" Label="m_FeiTanClient" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/frmMain.cs StartLineNumber=85 StartCharacterOffset=24 EndLineNumber=85 EndCharacterOffset=24)" />
+    <Node Id="@17" Category="CodeSchema_Event" Bounds="-56.5115639966008,182.443241568218,178.84,25" CodeSchemaProperty_IsPublic="True" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="OnDataPacketArrivals" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/CBsjClient.cs StartLineNumber=21 StartCharacterOffset=49 EndLineNumber=21 EndCharacterOffset=49)" />
+    <Node Id="@18" Category="CodeSchema_Method" Bounds="281.583499606301,19.1546629714966,102.933333333333,25.24" CodeSchemaProperty_IsPrivate="True" CommonLabel="RecvThread" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="RecvThread" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/CFeiTanClient.cs StartLineNumber=918 StartCharacterOffset=2 EndLineNumber=918 EndCharacterOffset=2)" />
+    <Node Id="@19" Category="CodeSchema_Method" Bounds="239.334611104329,129.634863517007,143.403333333333,25.24" CodeSchemaProperty_IsPrivate="True" CommonLabel="SendLoginRequest" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="SendLoginRequest" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/CFeiTanClient.cs StartLineNumber=1035 StartCharacterOffset=2 EndLineNumber=1035 EndCharacterOffset=2)" />
+    <Node Id="@6" Category="CodeSchema_Method" Bounds="61.7963674163818,240.115063517007,118.48,25.24" CodeSchemaProperty_IsPrivate="True" CommonLabel="OnBsjGpsData" FunctionTypeFlags="Method" Label="OnBsjGpsData" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/frmMain.cs StartLineNumber=884 StartCharacterOffset=2 EndLineNumber=884 EndCharacterOffset=2)" />
+    <Node Id="@8" Category="CodeSchema_Method" Bounds="-18.7423288726807,127.203141568218,104.73,25.24" CodeSchemaProperty_IsPrivate="True" CommonLabel="ParsePacket" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="ParsePacket" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///D:/git/huangxy/gps-parrot/gpsTran/CBsjClient.cs StartLineNumber=151 StartCharacterOffset=2 EndLineNumber=151 EndCharacterOffset=2)" />
+    <Node Id="BSJ(GPS)通讯线程" Category="Comment" Bounds="85.1668329396347,16.9630421447754,166.416666666667,25.24" Label="BSJ(GPS监控中心)通讯线程" UseManualLocation="True" />
+    <Node Id="FeiTan(交控中心)通讯线程" Category="Comment" Bounds="414.516832939635,17.9145630645752,161.296666666667,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="(@1 @2 @7 Member=(Name=InitClient OverloadingParameters=[@11,(@4 @5 Type=Int32),@11,@11]))" Target="@14" Category="CodeSchema_FunctionPointer" Bounds="20.3498347596054,-13.2771586227417,24.886993739086,23.7822043189768" Weight="1" />
+    <Link Source="(@1 @2 @9 Member=(Name=InitConnect OverloadingParameters=[@11,(@4 @5 Type=Int32),@11,@11]))" Target="@18" Category="CodeSchema_Calls" Bounds="334.580345281415,-66.0855397033691,5.40320010212537,76.2627066332677" Weight="1">
+      <Category Ref="CodeSchema_FunctionPointer" />
+    </Link>
+    <Link Source="@10" Target="@19" Category="CodeSchema_Calls" Bounds="304.245133220124,99.6347635170066,3.36405023604198,21.1122228942584" Weight="1" />
+    <Link Source="@12" Target="@16" Category="CodeSchema_FieldRead" Bounds="269.898185818276,265.355063517007,2.82097899985445,21.0796244101339" Weight="1" />
+    <Link Source="@13" Target="@12" Category="CodeSchema_Calls" Bounds="214.315000153269,210.114963517007,34.9581258592216,24.7935358370924" Weight="1">
+      <Category Ref="CodeSchema_FunctionPointer" />
+    </Link>
+    <Link Source="@13" Target="@15" Category="CodeSchema_FieldReference" Bounds="165.724334716797,210.114959716797,29.1614685058594,81.1595153808594" Weight="4">
+      <Category Ref="CodeSchema_FieldRead" />
+      <Category Ref="CodeSchema_FieldWrite" />
+    </Link>
+    <Link Source="@13" Target="@16" Category="CodeSchema_FieldReference" Bounds="197.107086181641,210.114959716797,35.8343963623047,81.3076171875" Weight="6">
+      <Category Ref="CodeSchema_FieldRead" />
+      <Category Ref="CodeSchema_FieldWrite" />
+    </Link>
+    <Link Source="@13" Target="@17" Category="CodeSchema_Calls" Bounds="131.327341629566,196.478193339369,22.7288451990468,0.354481498981613" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@13" Target="@6" Category="CodeSchema_FunctionPointer" Bounds="145.54435779541,210.114963517007,33.7317765987874,24.6850522661877" Weight="1" />
+    <Link Source="@14" Target="@8" Category="CodeSchema_Calls" Bounds="4.40475948783071,41.9629431915283,22.8751870189718,76.6163714941942" Weight="1" />
+    <Link Source="@18" Target="(@1 @2 Type=CFeiTianPacket Member=(Name=SplitPacket OverloadingParameters=[(@4 @5 Type=(Name=Byte ArrayRank=1 ParentType=Byte) ParamKind=Ref)]))" Category="CodeSchema_Calls" Bounds="356.164496811405,44.3946629714966,47.0477698419888,25.687218343554" Weight="1" />
+    <Link Source="@18" Target="@10" Category="CodeSchema_Calls" Bounds="313.65895112434,44.3946629714966,12.3510948341035,22.140362641929" Weight="1" />
+    <Link Source="@18" Target="@19" Category="CodeSchema_Calls" Bounds="333.447937011719,44.3946647644043,31.2854919433594,79.5369300842285" Weight="1" />
+    <Link Source="@6" Target="@15" Category="CodeSchema_FieldRead" Bounds="121.603510753919,265.355063517007,0.944153196471405,21.0091744905571" Weight="1" />
+    <Link Source="@6" Target="@16" Category="CodeSchema_FieldRead" Bounds="154.386362715264,265.355063517007,70.8616895830995,26.8148320419314" Weight="1" />
+    <Link Source="@8" Target="@17" Category="CodeSchema_FieldReference" Bounds="33.1870188720319,152.443141568218,0.272124843982411,21.0008554752511" />
+    <Link Source="BSJ(GPS)通讯线程" Target="@14" Bounds="64.1668239709856,29.4338793777048,21.000008968649,0.030059200415959" />
+    <Link Source="FeiTan(交控中心)通讯线程" Target="@18" Bounds="393.516569633848,31.1514830945541,21.0002633057865,0.160641671472906" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Calls" Label="Calls" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Called By" OutgoingActionLabel="Calls" />
+    <Category Id="CodeSchema_Event" Label="Event" BasedOn="CodeSchema_Field" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Event" NavigationActionLabel="Events" />
+    <Category Id="CodeSchema_Field" Label="Field" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="Fields" />
+    <Category Id="CodeSchema_FieldRead" Label="Field Read" BasedOn="CodeSchema_FieldReference" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Read By" OutgoingActionLabel="Reads Fields" />
+    <Category Id="CodeSchema_FieldReference" Label="Field Reference" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Referenced By" OutgoingActionLabel="References Fields" />
+    <Category Id="CodeSchema_FieldWrite" Label="Field Write" BasedOn="CodeSchema_FieldReference" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Written By" OutgoingActionLabel="Writes Fields" />
+    <Category Id="CodeSchema_FunctionPointer" Label="Function Pointer" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Function Pointers" OutgoingActionLabel="Function Pointers" />
+    <Category Id="CodeSchema_Member" Label="Member" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="Members" />
+    <Category Id="CodeSchema_Method" Label="Method" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Link:Forward:CodeSchema_Calls" Icon="CodeSchema_Method" NavigationActionLabel="Methods" />
+    <Category Id="Comment" Label="Comment" Description="Represents a user defined comment on the diagram" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Comments" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsConstructor" Label="Is Constructor" Description="Flag to indicate the method is a constructor" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPrivate" Label="Is Private" Description="Flag to indicate the scope is Private" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Is Public" Description="Flag to indicate the scope is Public" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="DataVirtualized" Label="Data Virtualized" Description="If true, the graph can contain nodes and links that represent data for virtualized nodes/links (i.e. not actually created in the graph)." DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="DelayedChildNodesState" Label="Delayed Child Nodes State" Description="Unspecified if the delayed child nodes state is not specified. NotFetched if the group contains child nodes that are not fetched into the graph yet. Fetched if the group has all its delayed child nodes already fetched." DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="DelayedCrossGroupLinksState" Label="Delayed Cross-Group Links State" Description="Unspecified if the delayed cross-group links state is not specified. NotFetched if delayed cross-group links on this node are not fetched into the graph yet. Fetched if all delayed cross-group links have already fetched." DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FunctionTypeFlags" Label="FunctionTypeFlags" Description="FunctionTypeFlags" DataType="System.String" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Icon" Description="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTargetVirtualized" Label="Link Target Virtualized" Description="If true, the link target end contains data for virtualized nodes/links (i.e. not actually created in the graph)." DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Language" Label="Language" Description="Language" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="Start Line Number" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+    <Property Id="Weight" Label="Weight" Description="Weight" DataType="System.Double" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="ArrayRank" Label="Array Rank" ValueType="System.String" />
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="Member" Label="Member" ValueType="System.Object" />
+    <Name Id="Name" Label="Name" ValueType="System.String" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="Parameter" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="ParamKind" Label="Parameter Kind" ValueType="Microsoft.VisualStudio.GraphModel.CodeSchema.ParamKind" />
+    <Name Id="ParentType" Label="Parent Type" ValueType="System.Object" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(a23eb368-f592-470e-8d74-f2fa5887f94a.OutputPathUri)" />
+    <Alias n="2" Id="Namespace=gpsTran" />
+    <Alias n="3" Id="Type=frmMain" />
+    <Alias n="4" Uri="Assembly=$(FxRootUri)/v2.0.50727/mscorlib.dll" />
+    <Alias n="5" Id="Namespace=System" />
+    <Alias n="6" Id="(@1 @2 @3 Member=(Name=OnBsjGpsData OverloadingParameters=[(@4 @5 Type=(Name=Byte ArrayRank=1 ParentType=Byte))]))" />
+    <Alias n="7" Id="Type=CBsjClient" />
+    <Alias n="8" Id="(@1 @2 @7 Member=(Name=ParsePacket OverloadingParameters=[(@4 @5 Type=(Name=Byte ArrayRank=1 ParentType=Byte))]))" />
+    <Alias n="9" Id="Type=CFeiTanClient" />
+    <Alias n="10" Id="(@1 @2 @9 Member=(Name=ParsePacket OverloadingParameters=[(@4 @5 Type=(Name=Byte ArrayRank=1 ParentType=Byte))]))" />
+    <Alias n="11" Id="(@4 @5 Type=String)" />
+    <Alias n="12" Id="(@1 @2 @3 Member=(Name=OnFeiTanPacket OverloadingParameters=[@11]))" />
+    <Alias n="13" Id="(@1 @2 @3 Member=.ctor)" />
+    <Alias n="14" Id="(@1 @2 @7 Member=ClientThread)" />
+    <Alias n="15" Id="(@1 @2 @3 Member=m_BsjClient)" />
+    <Alias n="16" Id="(@1 @2 @3 Member=m_FeiTanClient)" />
+    <Alias n="17" Id="(@1 @2 @7 Member=OnDataPacketArrivals)" />
+    <Alias n="18" Id="(@1 @2 @9 Member=RecvThread)" />
+    <Alias n="19" Id="(@1 @2 @9 Member=SendLoginRequest)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Results" ValueLabel="True">
+      <Condition Expression="HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFBCFFBE" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Assembly" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#FF094167" />
+      <Setter Property="Stroke" Value="#FF094167" />
+      <Setter Property="Icon" Value="CodeSchema_Assembly" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Namespace" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#FF0E619A" />
+      <Setter Property="Stroke" Value="#FF0E619A" />
+      <Setter Property="Icon" Value="CodeSchema_Namespace" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Interface" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Interface')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Interface" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Struct" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Struct')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Struct" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enumeration" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Enum')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Enum" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Delegate" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Delegate')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Delegate" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Class" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Class" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Property')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Property" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Method" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Method') Or HasCategory('CodeSchema_CallStackUnresolvedMethod')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Method" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Event" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Event')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Field')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Field" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Out Parameter" ValueLabel="True">
+      <Condition Expression="CodeSchemaProperty_IsOut = 'True'" />
+      <Setter Property="Icon" Value="CodeSchema_OutParameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Parameter" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_Parameter')" />
+      <Setter Property="Icon" Value="CodeSchema_Parameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Local Variable" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_LocalExpression')" />
+      <Setter Property="Icon" Value="CodeSchema_LocalExpression" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Externals" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FF424242" />
+      <Setter Property="Stroke" Value="#FF424242" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('InheritsFrom') And Target.HasCategory('CodeSchema_Class')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('Implements') And Target.HasCategory('CodeSchema_Interface')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Field Read" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Target.HasCategory('CodeSchema_Field') And HasCategory('CodeSchema_FieldRead')" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Comment Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Source.HasCategory('Comment')" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Cursor Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCursorLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Disabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="DisabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="EnabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Instruction Pointer Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsInstructionPointerLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Callstack Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCurrentCallstackFrame" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Comment" ValueLabel="Has comment">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="a23eb368-f592-470e-8d74-f2fa5887f94a.OutputPathUri" Value="file:///D:/git/huangxy/gps-parrot/gpsTran/bin/Debug/gpsTran.exe" />
+    <Path Id="FxRootUri" Value="file:///C:/Windows/Microsoft.NET/Framework" />
+  </Paths>
+</DirectedGraph>
