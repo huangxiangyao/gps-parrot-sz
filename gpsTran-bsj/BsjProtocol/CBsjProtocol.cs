@@ -7,7 +7,9 @@ namespace BSJProtocol
 	public class CBsjProtocol
 	{
 		public delegate void ShowImageEx(string strPath);
-		private byte[] m_abtBuffer;
+
+        #region m_abtBuffer: Append, Clear
+        private byte[] m_abtBuffer;
 		public void Append(byte[] buff)
 		{
 			if (this.m_abtBuffer == null)
@@ -38,7 +40,9 @@ namespace BSJProtocol
 		{
 			this.m_abtBuffer = null;
 		}
-		public AnalysisResutl SplitPack(out byte[] PackData)
+        #endregion
+
+        public AnalysisResutl SplitPack(out byte[] PackData)
 		{
 			PackData = null;
 			AnalysisResutl result;
@@ -95,7 +99,9 @@ namespace BSJProtocol
 			}
 			return result;
 		}
-		public static byte GetXorValue(byte[] abtData, int iStartPos, int nLength)
+
+        #region Public Utilities
+        public static byte GetXorValue(byte[] abtData, int iStartPos, int nLength)
 		{
 			byte b = abtData[iStartPos];
 			nLength += iStartPos;
@@ -668,7 +674,10 @@ namespace BSJProtocol
 			}
 			return result;
 		}
-		private static void ParseAnswerCommand(byte[] buff, ref StringBuilder sb)
+        #endregion
+
+        #region Private static methods
+        private static void ParseAnswerCommand(byte[] buff, ref StringBuilder sb)
 		{
 			try
 			{
@@ -1522,6 +1531,7 @@ namespace BSJProtocol
 		}
 		private static void dbgPrint(Exception ex)
 		{
-		}
-	}
+        }
+        #endregion
+    }
 }

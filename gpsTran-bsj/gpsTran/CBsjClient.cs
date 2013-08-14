@@ -10,7 +10,8 @@ namespace gpsTran
 		public delegate void OnDataPacketArrivalsEx(byte[] packData);
 		public delegate void OnClientStatusChangeEx(bool blnChange);
 		public delegate void ShowMessageEx(string strMsg);
-		private Thread m_ClientThread;
+		
+        private Thread m_ClientThread;
 		private Socket m_sckClient;
 		private bool m_blnExit;
 		private string m_strTcpHost;
@@ -18,6 +19,7 @@ namespace gpsTran
 		private string m_strUser;
 		private string m_strPass;
 		private long _PacketCount = 0L;
+
 		public event CBsjClient.OnClientStatusChangeEx OnClientStatusChange;
 		public event CBsjClient.OnDataPacketArrivalsEx OnDataPacketArrivals;
 		public event CBsjClient.ShowMessageEx ShowMessage;
@@ -40,6 +42,7 @@ namespace gpsTran
 			this.m_ClientThread.Start();
 			this.m_blnExit = false;
 		}
+
 		private void ClientThread()
 		{
 			try
@@ -196,7 +199,7 @@ namespace gpsTran
 								}
 								else
 								{
-									this.PrintStatus("登录中心服务器失败，2秒后再次偿试登录！");
+									this.PrintStatus("登录中心服务器失败，2秒后再次尝试登录！");
 									Thread.Sleep(2000);
 									this.SendLoginRequest(this.m_strUser, this.m_strPass);
 								}
@@ -224,6 +227,7 @@ namespace gpsTran
 				this.dbgPrint(ex);
 			}
 		}
+
 		public void Close()
 		{
 			try
@@ -262,6 +266,7 @@ namespace gpsTran
 				this.dbgPrint(ex);
 			}
 		}
+
 		private void dbgPrint(Exception ex)
 		{
 			if (this.ShowMessage != null)
