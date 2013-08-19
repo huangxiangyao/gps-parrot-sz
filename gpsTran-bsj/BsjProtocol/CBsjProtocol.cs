@@ -130,17 +130,24 @@ namespace BSJProtocol
 			}
 			return string.Join(" ", array);
 		}
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nCmdID"></param>
+        /// <param name="nIPAddress"></param>
+        /// <param name="Content"></param>
+        /// <returns></returns>
 		public static byte[] CombinePacket(byte nCmdID, int nIPAddress, byte[] Content)
 		{
 			byte[] result;
 			try
 			{
 				byte[] array = new byte[Content.Length + 11];
-				array[0] = 41;
+				array[0] = 41;//'A'
 				array[1] = 41;
-				array[2] = nCmdID;
-				array[3] = (byte)((array.Length - 5 & 65280) >> 8);
-				array[4] = (byte)(array.Length - 5 & 255);
+				array[2] = nCmdID;//0xA3 is Login Request
+				array[3] = (byte)((array.Length - 5 & 0xff00) >> 8);
+				array[4] = (byte)(array.Length - 5 & 0xff);
 				DWORDIPAddress dWORDIPAddress = default(DWORDIPAddress);
 				dWORDIPAddress.Address = nIPAddress;
 				array[5] = dWORDIPAddress.Byte1;
@@ -219,6 +226,13 @@ namespace BSJProtocol
 				dWORDIPAddress.Byte4.ToString()
 			});
 		}
+        /// <summary>
+        /// uid_pwd_
+        /// </summary>
+        /// <param name="strUser"></param>
+        /// <param name="strPass"></param>
+        /// <returns></returns>
+ 
 		public static byte[] MakeLoginPacket(string strUser, string strPass)
 		{
 			byte[] result;
