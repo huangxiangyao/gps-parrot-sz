@@ -7,7 +7,9 @@ namespace BSJProtocol
 	public class CBsjProtocol
 	{
 		public delegate void ShowImageEx(string strPath);
-		private byte[] m_abtBuffer;
+
+        #region m_abtBuffer: Append, Clear
+        private byte[] m_abtBuffer;
 		public void Append(byte[] buff)
 		{
 			if (this.m_abtBuffer == null)
@@ -38,7 +40,9 @@ namespace BSJProtocol
 		{
 			this.m_abtBuffer = null;
 		}
-		public AnalysisResutl SplitPack(out byte[] PackData)
+        #endregion
+
+        public AnalysisResutl SplitPack(out byte[] PackData)
 		{
 			PackData = null;
 			AnalysisResutl result;
@@ -95,7 +99,9 @@ namespace BSJProtocol
 			}
 			return result;
 		}
-		public static byte GetXorValue(byte[] abtData, int iStartPos, int nLength)
+
+        #region Public Utilities
+        public static byte GetXorValue(byte[] abtData, int iStartPos, int nLength)
 		{
 			byte b = abtData[iStartPos];
 			nLength += iStartPos;
@@ -124,17 +130,24 @@ namespace BSJProtocol
 			}
 			return string.Join(" ", array);
 		}
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nCmdID"></param>
+        /// <param name="nIPAddress"></param>
+        /// <param name="Content"></param>
+        /// <returns></returns>
 		public static byte[] CombinePacket(byte nCmdID, int nIPAddress, byte[] Content)
 		{
 			byte[] result;
 			try
 			{
 				byte[] array = new byte[Content.Length + 11];
-				array[0] = 41;
+				array[0] = 41;//'A'
 				array[1] = 41;
-				array[2] = nCmdID;
-				array[3] = (byte)((array.Length - 5 & 65280) >> 8);
-				array[4] = (byte)(array.Length - 5 & 255);
+				array[2] = nCmdID;//0xA3 is Login Request
+				array[3] = (byte)((array.Length - 5 & 0xff00) >> 8);
+				array[4] = (byte)(array.Length - 5 & 0xff);
 				DWORDIPAddress dWORDIPAddress = default(DWORDIPAddress);
 				dWORDIPAddress.Address = nIPAddress;
 				array[5] = dWORDIPAddress.Byte1;
@@ -213,6 +226,13 @@ namespace BSJProtocol
 				dWORDIPAddress.Byte4.ToString()
 			});
 		}
+        /// <summary>
+        /// uid_pwd_
+        /// </summary>
+        /// <param name="strUser"></param>
+        /// <param name="strPass"></param>
+        /// <returns></returns>
+ 
 		public static byte[] MakeLoginPacket(string strUser, string strPass)
 		{
 			byte[] result;
@@ -668,7 +688,10 @@ namespace BSJProtocol
 			}
 			return result;
 		}
-		private static void ParseAnswerCommand(byte[] buff, ref StringBuilder sb)
+        #endregion
+
+        #region Private static methods
+        private static void ParseAnswerCommand(byte[] buff, ref StringBuilder sb)
 		{
 			try
 			{
@@ -1522,6 +1545,7 @@ namespace BSJProtocol
 		}
 		private static void dbgPrint(Exception ex)
 		{
-		}
-	}
+        }
+        #endregion
+    }
 }
